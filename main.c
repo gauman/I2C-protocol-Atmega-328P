@@ -28,7 +28,7 @@ int main(void)
 		
 			TWI_start();
 			
-			TWI_write_address(0x20);
+			TWI_write_address(0x20);// LSB is used as the R/W select bit, so address is 0x10 hex.
 			
 			TWI_write_data(0xff);
 			
